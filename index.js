@@ -33,3 +33,15 @@ function computerTurn(){
 
     }
 }
+function checkWinner (){
+    if (player == computer){
+        return"Draw !";
+    }else if(computer == "ROCK"){
+        return (player == "PAPER") ? "You Win !" :"You Lose !";
+    }else if(computer == "PAPER"){
+        return (player == "SCISSOR") ? "You Win !" :"You Lose !";
+    }else if(computer == "SCISSOR"){
+        return (player == "ROCK") ? "You Win !" :"You Lose !";
+    }
+        
+}
